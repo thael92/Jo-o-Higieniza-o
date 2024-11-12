@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pagina-interia{
+    width: 100vw;
+    height: 100vh;
+}
+.Icone-lado-sofar {
+    height: 300px;
+    cursor: pointer;
+
+    }
+
+.logo {
+    height: 200px;
+
+}
+
+
+button {
+    background-color: rgb(0, 183, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+
+}
+
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 100vh;
+    color: aliceblue;
+
+}
+
+.caixa-pincipal {
+    width: 60%;
+
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.caixa-fundo-servicos {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.icons-instagram {
+    right: 20px;
+    bottom: 80px;
+    position: fixed;
+}
+
+.whatsapp {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+
+
+}
+
+.icone-logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 30px;
+}
+
+.icone-logo img {
+    height: 60px;
+}
+
+.icone-logo a {
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icone-logo a:hover {
+    color: rgb(1, 169, 175);
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.entre-contato a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+
+.Icone-lado-sofar {
+    display: flex;
+}
+
+.Icone-lado-sofar img:hover {
+    height: 345px;
+    transition: 1s ease-in-out;
+
+}
+
+.formulario-fale-conosco {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    left: -300px;
+    padding: 20px;
+    border-radius: 7px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: aquamarine;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: aquamarine;
+}
+
+.mascara-formulario {
+    visibility: hidden;/*visibilidade- esconder*/
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+.mascara-s{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+   }
+.caixa-p-sofa{
+    display: flex;
+    color: aliceblue;
+    margin: 5%;
+     width: 240px;
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.caixa-p-cama{
+    display: flex;
+    color: rgb(253, 253, 253);
+    margin: 5%;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 255px; background-image: url('./imagens/cama.jpg');
+    
+    background-position: center;
+    background-size: cover;
+    }
+
+
+ @media (max-width: 600px){
+    p { display: none;}
+    .caixa-mae{
+        flex-direction: column;
+    }
+    .caixa-mae {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 42px;
+        height: 50vh;
+        color: aliceblue;
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+    }
+    .formulario-fale-conosco {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        left: -300px;
+        padding: 20px;
+        border-radius: 7px;
+        transition: left 1s ease-in-out;
+    }
+    .Icone-lado-sofar{
+        display: none;
+    }
+    .icons-instagram {
+        right: 20px;
+        top: 83%;
+        position: fixed;
+        left: 5px;
+        display: block;
+    }
+    
+    .whatsapp {
+        right: 20px;
+        top: 90%;
+        position: fixed;
+        left: 5px;
+        display: block;
+    }
+    .logo {
+        height: 150px;
+        position: relative;
+    
+    }
+   
+ }
